@@ -1,0 +1,108 @@
+.section-home{
+	min-height: 100%;
+	background: url(../images/background-dark.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.login-form{
+	display: block;
+	width: 90%;
+	padding: 80px 0;
+	margin-left: 5%;
+	border-radius: 5px;
+	min-height: 100%;
+}
+
+.link-from{
+	margin-top: 25px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.network-log-button{
+	position: relative;	
+}
+
+.network-log-button p{
+	display: block;
+}
+
+.network-log-button .fa{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	color: #fff;
+	font-size: 1.2em;
+	transform: translateY(-50%);
+}
+
+.network-log-button{
+	display: block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+	background: var(--grey);
+	margin-bottom: 10px;
+}
+
+.facebook{
+	background: #3b5998;
+}
+
+.twitter{
+ 	background: #1da1f2;
+}
+
+.linkedin{
+	background: #0077b5;
+}
+
+.github{
+	background: #333333;
+}
+
+.google{
+	background: #ea4335;
+}
+
+@media only screen and (min-width:800px){
+	.login-form{
+		width: 50%;
+		margin-left: 25%;
+	}
+}
+
+@media only screen and (min-width:1100px){
+	.login-form{
+		width: 35%;
+		margin-left: 32.5%;
+		padding-top: 130px;
+	}
+
+	.link-from{
+		position: absolute;
+		top: 130px;
+		right: 50px;
+		margin-top: 0;
+	}
+
+	.log-form,
+	.link-form{
+		min-height: 390px;		
+	}
+
+	.network-log-button{
+		transition: opacity 0.2s;
+	}
+
+	.network-log-button:hover{
+		color: #fff;
+		opacity: 0.9;
+	}
+}

@@ -1,0 +1,16 @@
+:root {
+	--dgreen: #38817a;
+	--dgreen-light: #488a84;
+	--dgreen-lighter: #41847e;
+	--dgreen-dark: #22766E;
+	--dgreen-darker: #166059;
+	--action-color: #55bfb5;
+	--action-color-hover: #5DC7BD;
+
+	--grey-lighter: #F9F9F9;
+	--grey-light: #f6f6f6;
+	--grey: #DEDEDE;
+	--grey-darker: #272727;
+
+	--text-color: #555;
+}
