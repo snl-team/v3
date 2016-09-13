@@ -6,6 +6,14 @@ $(document).ready(function(){
 		console.log(tolog)
 	}
 
+	var animatedScroll = function(){
+		$('a[href^="#"]').click(function(){
+			var $target = $(this).attr("href");
+			$('html, body').animate({scrollTop:$($target).offset().top - 50 + 'px'}, 'slow');
+			return false;
+		});
+	}();
+
 	var mobileMenu = function(){
 		var button = $('.hamb-button'),
 				menu = $('.header'),
@@ -38,13 +46,15 @@ $(document).ready(function(){
 		}
 	}
 
+	var scrollSpy = function(){
+		
+	}
+
 
 	if(windowWidth > 1100){
 		$('.parallax-section').parallax('center', 0.15, 0.1, true);		
 	}
 	mobileMenu();
 	connectWith();
-
-	$('.news-slider').owlCarousel();
 
 }) //end of jQuery

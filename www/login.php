@@ -30,15 +30,15 @@
 		</div>
 		<div class="navigation">
 			<ul class="nav">
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#">A propos</a></li>
-				<li><a href="#">Actualités</a></li>
-				<li><a href="#">Premium</a></li>
+				<li><a href="index.php#home">Accueil</a></li>
+				<li><a href="index.php#about">A propos</a></li>
+				<li><a href="index.php#premium">Premium</a></li>
+				<li><a href="index.php#actualités">Actualités</a></li>
 				<li><a href="#">Emploi</a></li>
 			</ul>
 		</div>
 		<div class="log-sign clearfix">
-			<a href="#" class="login-button"><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Connexion</span></a>
+			<a href="login.php" class="login-button"><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Connexion</span></a>
 		</div>
 	</header>
 	<header class="header-band">

@@ -32,15 +32,15 @@
 		</div>
 		<div class="navigation">
 			<ul class="nav">
-				<li><a href="#" class="active">Accueil</a></li>
-				<li><a href="#">A propos</a></li>
-				<li><a href="#">Actualités</a></li>
-				<li><a href="#">Premium</a></li>
+				<li><a href="#home" class="active">Accueil</a></li>
+				<li><a href="#about">A propos</a></li>
+				<li><a href="#premium">Premium</a></li>
+				<li><a href="#actualites">Actualités</a></li>
 				<li><a href="#">Emploi</a></li>
 			</ul>
 		</div>
 		<div class="log-sign clearfix">
-			<a href="#" class="login-button">Connexion</a>
+			<a href="login.php" class="login-button"><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Connexion</span></a>
 		</div>
 	</header>
 	<header class="header-band">
@@ -65,7 +65,7 @@
 			<p>Menu</p>
 		</div>
 	</header>
-	<section class="section parallax-section section-home">
+	<section class="section parallax-section section-home" id="home">
 		<div class="catchphrase">
 			<h1>Le premier réseau professionnel</h1>
 			<h2>Basé sur la méthodologie agile</h2>
@@ -173,7 +173,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section-reversed">
+	<section class="section section-reversed" id="premium">
 		<div class="section-content d-container pricing-container">
 			<div class="d-row">
 				<div class="d-col d-col-4">
@@ -243,7 +243,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section-actu">
+	<section class="section section-actu" id="actualites">
 		<div class="section-content">
 			<h3>Ils nous font confiance et ont décidé de vous partager leurs actualités</h3>
 		</div>
