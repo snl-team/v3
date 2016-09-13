@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="ressources/css/dgrid.css">
 	<link rel="stylesheet" href="ressources/css/global.css">
 	<link rel="stylesheet" href="ressources/css/login.css">
+	<link rel="stylesheet" href="ressources/css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
 <body>
@@ -37,8 +38,7 @@
 			</ul>
 		</div>
 		<div class="log-sign clearfix">
-			<a href="#" class="login-button">Connexion</a>
-			<a href="#" class="signin-button">Inscription</a>
+			<a href="#" class="login-button"><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Connexion</span></a>
 		</div>
 	</header>
 	<header class="header-band">

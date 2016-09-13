@@ -6,6 +6,11 @@
 	margin-bottom: 15px;
 }
 
+.alert p{
+	color: #fff;
+	margin-bottom: 0;
+}
+
 .alert p i{
 	margin-right: 10px;
 	color: #fff;

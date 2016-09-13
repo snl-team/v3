@@ -1,4 +1,5 @@
-.form h3{
+.form h3,
+.link-from h3{
 	color: var(--action-color);
 	font-size: 1.5em;
 	margin-bottom: 25px;
