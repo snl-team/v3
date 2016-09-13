@@ -8,7 +8,10 @@
 	<link rel="stylesheet" href="ressources/css/dgrid.css">
 	<link rel="stylesheet" href="ressources/css/global.css">
 	<link rel="stylesheet" href="ressources/css/login.css">
+	<link rel="stylesheet" href="ressources/css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+
 </head>
 <body>
 	<header class="header clearfix">
@@ -29,7 +32,7 @@
 		</div>
 		<div class="navigation">
 			<ul class="nav">
-				<li><a href="#">Accueil</a></li>
+				<li><a href="#" class="active">Accueil</a></li>
 				<li><a href="#">A propos</a></li>
 				<li><a href="#">Actualités</a></li>
 				<li><a href="#">Premium</a></li>
@@ -38,7 +41,6 @@
 		</div>
 		<div class="log-sign clearfix">
 			<a href="#" class="login-button">Connexion</a>
-			<a href="#" class="signin-button">Inscription</a>
 		</div>
 	</header>
 	<header class="header-band">
@@ -64,31 +66,221 @@
 		</div>
 	</header>
 	<section class="section parallax-section section-home">
-		<div class="login-form">
+		<div class="catchphrase">
+			<h1>Le premier réseau professionnel</h1>
+			<h2>Basé sur la méthodologie agile</h2>
+			<a href="#about">En savoir plus</a>
+		</div>
+		<div class="login-form sign-form">
 				<form action="#" method="#" class="form log-form">
-					<h3>Connexion</h3>
+					<h3>Inscription</h3>
 					<div class="field">
-						<label for="email">Nom d'utilisateur ou adresse Email</label>
-						<input type="email" id="email" placeholder="Nom d'utilisateur ou adresse Email">
+						<label for="username">Nom d'utilisateur</label>
+						<input type="text" id="username" placeholder="Nom d'utilisateur">
+					</div>
+					<div class="field">
+						<label for="email">Adresse Email</label>
+						<input type="text" id="email" placeholder="Adresse Email">
 					</div>
 					<div class="field">
 						<label for="password">Mot de passe</label>
 						<input type="password" id="password" placeholder="Mot de passe">
 					</div>
-					<button class="button button-green">Connexion</button>
+					<div class="field">
+						<label for="confirmPassword">Confirmer le mot de passe</label>
+						<input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe">
+					</div>
+					<button class="button button-green">Inscription</button>
 					<div class="clear"></div>
-					<div class="forgot">
-						<p><a href="#">Mot de passe oublié ?</a></p>
-						<p>Pas encore inscrit ? <a href="#">Créez un compte gratuit</a></p>
+					<h4 class="sign-options"><i class="fa fa-plus-circle" aria-hidden="true"></i> Inscription à partir des réseaux sociaux</h4>
+					<div class="connect-with">
+						<p><a href="#" class="network-log-button google"><i class="fa fa-google" aria-hidden="true"></i>Compte google</a></p>
+						<p><a href="#" class="network-log-button facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>facebook</a></p>
+						<p><a href="#" class="network-log-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i>twitter</a></p>
+						<p><a href="#" class="network-log-button linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>linkedin</a></p>
+						<p><a href="#" class="network-log-button github"><i class="fa fa-github" aria-hidden="true"></i>github</a></p>
 					</div>
 				</form>
-				<div class="link-from">
-					<h3>Se connecter avec :</h3>
-					<p><a href="#" class="network-log-button google"><i class="fa fa-google" aria-hidden="true"></i>Compte google</a></p>
-					<p><a href="#" class="network-log-button facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>facebook</a></p>
-					<p><a href="#" class="network-log-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i>twitter</a></p>
-					<p><a href="#" class="network-log-button linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>linkedin</a></p>
-					<p><a href="#" class="network-log-button github"><i class="fa fa-github" aria-hidden="true"></i>github</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+	<section class="section section-about" id="about">
+		<div class="section-content">
+			<div class="section-title">
+				<h3>A Propos</h3>
+			</div>
+			<p>DEBRIEFON est une plateforme collaborative de gestion de projet basée sur la méthodologie agile. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt aliquid illo, veritatis commodi ab minus repellendus, aut dolorum modi, vel pariatur mollitia ducimus. Quam magnam incidunt, obcaecati illum facilis et, perferendis repellendus amet voluptates reprehenderit, totam architecto mollitia repudiandae soluta excepturi. Eum numquam provident autem cumque impedit deleniti non.</p>
+		</div>
+	</section>
+	<section class="section section-reversed section-overed">
+		<div class="section-content d-container">
+			<div class="d-row">
+				<div class="d-col d-col-4">
+					<div class="feature">
+						<div class="feature-image">
+							<img src="ressources/images/features/network.png" alt="">
+						</div>
+						<div class="feature-title">
+							<h4>Réseau professionnel</h4>
+						</div>
+						<div class="feature-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laboriosam deleniti necessitatibus qui officiis recusandae.</p>
+							<a href="#" class="button">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="d-col d-col-4">
+					<div class="feature">
+						<div class="feature-image">
+							<img src="ressources/images/features/agile.png" alt="">
+						</div>
+						<div class="feature-title">
+							<h4>La méthode AGILE</h4>
+						</div>
+						<div class="feature-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit, laudantium ipsam beatae eaque inventore.</p>
+							<a href="#" class="button">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="d-col d-col-4">
+					<div class="feature">
+						<div class="feature-image">
+							<img src="ressources/images/features/cloud.png" alt="">
+						</div>
+						<div class="feature-title">
+							<h4>Cloud Computing</h4>
+						</div>
+						<div class="feature-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quidem voluptas? Vitae hic, porro deserunt.</p>
+							<a href="#" class="button">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-over">
+		<div class="section-top-img">
+			<img src="ressources/images/all-devices.png" alt="">
+		</div>
+		<div class="section-content">
+			<div class="section-sub-text">
+				<h4>Accessible sur tous vos appareils</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed magnam, tempore cupiditate porro quia magni ab pariatur veritatis sapiente fuga earum consequuntur blanditiis dolor nemo ratione autem itaque quidem. Itaque iusto tempore quis, quidem provident, fuga! Ex voluptate, voluptatem ea nobis reiciendis maxime placeat cumque voluptatum qui aliquam esse.</p>
+				<a href="#" class="button button-green">Inscription gratuite</a>
+			</div>
+		</div>
+	</section>
+	<section class="section section-reversed">
+		<div class="section-content d-container pricing-container">
+			<div class="d-row">
+				<div class="d-col d-col-4">
+					<div class="pricing">
+						<div class="pricing-header">
+							<h4>Basique</h4>
+						</div>
+						<div class="princing-show">
+							<div class="psi fnum free">Gratuit</div>
+						</div>
+						<div class="princing-content">
+							<ul>
+								<li>Item 1</li>
+								<li>Item 2</li>
+								<li>Item 3</li>
+								<li>Item 4</li>
+								<li>Item 5</li>
+								<li>Item 6</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="d-col d-col-4">
+					<div class="pricing premium">
+						<div class="pricing-header">
+							<h4>Premium</h4>
+						</div>
+						<div class="princing-show">
+							<div class="psi devise">EUR</div>
+							<div class="psi fnum">9</div>
+							<div class="psi snum">,99<span>/mois</span></div>
+						</div>
+						<div class="princing-content">
+							<ul>
+								<li>Item 1</li>
+								<li>Item 2</li>
+								<li>Item 3</li>
+								<li>Item 4</li>
+								<li>Item 5</li>
+								<li>Item 6</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="d-col d-col-4">
+					<div class="pricing">
+						<div class="pricing-header">
+							<h4>Professionnel</h4>
+						</div>
+						<div class="princing-show">
+							<div class="psi devise">EUR</div>
+							<div class="psi fnum">19</div>
+							<div class="psi snum">,99<span>/mois</span></div>
+						</div>
+						<div class="princing-content">
+							<ul>
+								<li>Item 1</li>
+								<li>Item 2</li>
+								<li>Item 3</li>
+								<li>Item 4</li>
+								<li>Item 5</li>
+								<li>Item 6</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-actu">
+		<div class="section-content">
+			<h3>Ils nous font confiance et ont décidé de vous partager leurs actualités</h3>
+		</div>
+	</section>
+	<section class="section">
+		<div class="section-content">
+			<div class="news-slider">
+				<div class="news news-1">
+					<div class="news-info">
+						<div class="pro-account-img">
+							<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>							
+						</div>
+						<div class="pro-account-name">
+							<a href="#">Entreprise 1</a><br>
+							<p>Management et Gestion de projet</p>
+						</div>
+					</div>
+					<div class="news-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
+						<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+					</div>
+				</div>
+				<div class="news-slider">
+				<div class="news news-2">
+					<div class="news-info">
+						<div class="pro-account-img">
+							<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>							
+						</div>
+						<div class="pro-account-name">
+							<a href="#">Entreprise 2</a><br>
+							<p>Management et Gestion de projet</p>
+						</div>
+					</div>
+					<div class="news-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
+						<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -124,20 +316,15 @@
 						<li><a href="#" class="fu-twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span>twitter</span></a></li>
 						<li><a href="#" class="fu-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i><span>linkedin</span></a></li>
 					</ul>
-				</div>
-				<div class="d-col d-col-12">
 					<ul class="find-us">
 						<p>DEBRIEFON</p>
 						<li>4 rue de Pâques - 67000 Strasbourg - France</li>
-						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.2578225630887!2d7.738368815664765!3d48.585762079261755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c84941482c9f%3A0x5118e84119076bb5!2s4+Rue+de+P%C3%A2ques%2C+67000+Strasbourg!5e0!3m2!1sfr!2sfr!4v1473772697833" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="ressources/js/parallax/parallax.js"></script>
 	<script src="ressources/js/front.js"></script>
 </body>

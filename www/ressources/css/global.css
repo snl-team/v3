@@ -14,6 +14,11 @@
 @import url(css-content/init.css);
 
 /*******************/
+/**** BUTTONS CSS ****/
+/*******************/
+@import url(css-content/button.css);
+
+/*******************/
 /**** FORM CSS ****/
 /*******************/
 @import url(css-content/form.css);
@@ -27,3 +32,8 @@
 /**** FOOTER CSS ****/
 /*******************/
 @import url(css-content/footer.css);
+
+/*******************/
+/**** ALERTS CSS ****/
+/*******************/
+@import url(css-content/alerts.css);

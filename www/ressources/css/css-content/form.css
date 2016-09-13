@@ -1,3 +1,9 @@
+.form h3{
+	color: var(--action-color);
+	font-size: 1.5em;
+	margin-bottom: 25px;
+}
+
 .search-form{
 	width: 100%;
 	height: auto;
@@ -84,18 +90,8 @@
 	border: 1px solid var(--grey);
 }
 
-.button{
-	float: right;
-	display: inline-block;
-	border: none;
-	background: var(--grey);
-	padding: 10px 15px;
-	border-radius: 2px;
-}
-
-.button-green{
-	color: #fff;
-	background: var(--action-color);
+.form .button{
+	float: right;	
 }
 
 .forgot p{
@@ -116,12 +112,12 @@
 		font-size: 1em;
 	}
 
-	.button{
+	.form .button{
 		transition: background 0.2s;
 		cursor: pointer;
 	}
 
-	.button:hover{
+	.form .button:hover{
 		background: var(--grey-lighter);
 	}
 

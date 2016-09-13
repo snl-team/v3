@@ -7,10 +7,18 @@
 	--action-color: #55bfb5;
 	--action-color-hover: #5DC7BD;
 
+	--error: #e74c3c;
+	--success: #56bfb5;
+	--info: #3498db;
+
 	--grey-lighter: #F9F9F9;
 	--grey-light: #f6f6f6;
 	--grey: #DEDEDE;
+	--grey-medium: #B4B4B4;
+	--grey-dark: #454545;
 	--grey-darker: #272727;
+	--grey-hover: #E9E9E9;
 
 	--text-color: #555;
+	--text-light: #696969;
 }

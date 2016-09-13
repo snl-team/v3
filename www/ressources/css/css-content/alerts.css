@@ -1,0 +1,26 @@
+.alert{
+	width: 100%;
+	border-radius: 5px;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.alert p i{
+	margin-right: 10px;
+	color: #fff;
+	font-size: 1.2em;
+	transform: translateY(1px);
+}
+
+.error{
+	background: var(--error);
+}
+
+.success{
+	background: var(--success);
+}
+
+.info{
+	background: var(--info);
+}
