@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="ressources/css/login.css">
 	<link rel="stylesheet" href="ressources/css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="icon" href="ressources/images/favicon.png" />
 	
 	<!-- Plugin Owl Carousel -->
 	<link rel="stylesheet" href="ressources/plugins/owl-slider/owl-carousel/owl.carousel.css">
@@ -29,13 +30,13 @@
 				<div class="sfield">
 					<label for="searchField" class="label">Rechercher...</label>
 					<input type="text" class="input" id="searchField" placeholder="Rechercher...">
-					<button><i class="fa fa-search" aria-hidden="true"></i><span>Rechercher</span></button>
+					<button class="search-submit"><i class="fa fa-search" aria-hidden="true"></i><span>Rechercher</span></button>
 				</div>
 			</form>				
 		</div>
 		<div class="navigation">
 			<ul class="nav" id="top-menu">
-				<li><a href="#home" class="anchor-item">Accueil</a></li>
+				<li><a href="#home" class="anchor-item active">Accueil</a></li>
 				<li><a href="#about" class="anchor-item">A propos</a></li>
 				<li><a href="#services" class="anchor-item">Services</a></li>
 				<li><a href="#premium" class="anchor-item">Premium</a></li>
@@ -56,7 +57,7 @@
 				<div class="sfield">
 					<label for="searchField" class="label">Rechercher...</label>
 					<input type="text" class="input" id="searchField" placeholder="Rechercher...">
-					<button><i class="fa fa-search" aria-hidden="true"></i><span>Rechercher</span></button>
+					<button class="search-submit"><i class="fa fa-search" aria-hidden="true"></i><span>Rechercher</span></button>
 				</div>
 			</form>				
 		</div>
@@ -276,8 +277,14 @@
 							</div>
 						</div>
 						<div class="news-content">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
-							<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+							<div class="news-img">
+								<img src="ressources/images/entreprise.jpg" alt="">
+							</div>
+							<div class="news-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
+								<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+							</div>
+							<div class="clear"></div>
 						</div>
 					</div>
 					<div class="news news-2">
@@ -318,6 +325,7 @@
 						<li><a href="#">Cloud Computiong</a></li>
 						<li><a href="#">Gestion de projets</a></li>
 						<li><a href="#">Emailing</a></li>
+						<li><a href="#">Messagerie instantanée</a></li>
 						<li><a href="#">Archivage automatique d'emails</a></li>
 						<li><a href="#">Transferts de fichiers lourds</a></li>
 						<li><a href="#">Gestion d'entreprises</a></li>
@@ -344,5 +352,6 @@
 	<script src="ressources/plugins/owl-slider/owl-carousel/owl.carousel.js"></script>
 	<script src="ressources/js/parallax/parallax.js"></script>
 	<script src="ressources/js/front.js"></script>
+	<script src="ressources/js/home.js"></script>
 </body>
 </html>

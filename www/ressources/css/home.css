@@ -309,6 +309,21 @@
 	margin-top: 25px;
 }
 
+.news-img{
+	width: 100%;
+	overflow: hidden;
+	max-height: 200px;
+}
+
+.news-img img{
+	width: 100%;
+}
+
+.news-text{
+	
+}
+
+
 @media only screen and (min-width:800px){
 	.section-over{
 		transform: translateY(-110px);
@@ -325,6 +340,21 @@
 
 	.pricing-container .d-col{
 		padding: 20px;	
+	}
+
+	.news-img{
+		position: relative;
+		width: 20%;
+		float: left;
+		overflow: hidden;
+		max-height: 100px;
+	}
+
+	.news-text{
+		width: 80%;
+		float: left;
+		padding-left: 20px;
+		text-align: left;
 	}
 }
 
@@ -410,4 +440,20 @@
 	.news-content{
 		padding: 0 60px;
 	}
+
+	.news-img{
+		position: relative;
+		width: 26%;
+		float: left;
+		overflow: hidden;
+		max-height: 130px;
+	}
+
+	.news-text{
+		width: 74%;
+		float: left;
+		padding-left: 20px;
+		text-align: left;
+	}
+
 }

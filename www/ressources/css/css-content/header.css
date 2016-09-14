@@ -1,3 +1,7 @@
+.noverflow{
+	overflow: hidden;
+}
+
 .header{
 	background: var(--dgreen);
 	position: fixed;
@@ -5,10 +9,11 @@
 	right: 0;
 	width: 100%;
 	height: 100%;
-	padding: 30px;
+	padding: 10px 30px;
+	padding-bottom: 80px;
 	transform: translateX(100%);
 	z-index: 99999999999999;
-	transition: transform 0.2s ease-out;
+	transition: transform 0.15s ease-out;
 	overflow-x: hidden;
 }
 
@@ -59,12 +64,20 @@
 	background: var(--dgreen-light);
 }
 
+.nav li a i{
+	font-size: 1.3em;
+	color: #fff;
+	margin-right: 10px;
+	transform: translateY(2px);
+}
+
 .log-sign{
-	position: absolute;
+	position: static;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: auto;
+	margin-top: 50px;
 }
 
 .log-sign a{
@@ -100,8 +113,8 @@
 .close-menu p{
 	display: inline-block;
 	color: #fff;
-	padding: 10px;
-	border: 1px solid #fff;
+	padding: 7px 15px;
+	background: rgba(255,255,255,0.2);
 }
 
 .header-band{
@@ -167,6 +180,240 @@
 	border: 1px solid #fff;
 }
 
+.log-v-icons{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999999999999999999;
+	transform: translateX(110%);
+	transition: transform 0.15s ease-out;
+}
+
+.log-v-icons.shown{
+	transform: translateX(0);
+}
+
+.logged-icon{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	z-index: 99999999999999;
+}
+	
+.l-icon{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	background: var(--dgreen-dark);
+	border-top: 5px solid transparent;
+	transition: border 0.2s;
+}
+
+.l-icon.current{
+	border-color: var(--action-color);
+}
+
+.li-icon{
+	max-height: 48px;
+	padding: 10px;
+}
+
+.notification-icon{
+	position: relative;
+}
+
+.notif-count{
+	display: inline-block;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	background: var(--orange);
+	border-radius: 100%;
+	transform: translateX(-90%);
+}
+
+.logged-panels{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--dgreen);
+	transform: translateX(0);
+}
+
+.logged-panels.hide{
+	transform: translateX(110%);
+	transition: transform 0.15s ease-out;
+}
+
+.close-panel{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	display: inline-block;
+	color: #fff;
+	background: rgba(255,255,255,0.2);
+	padding: 3px 10px;
+	z-index: 99999999;
+}
+
+.title-band{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+	background: var(--dgreen);
+	z-index: 999999;
+}
+
+.title-band i{
+	color: #fff;
+	margin-right: 15px;
+}
+
+.title-band h4{
+	font-size: 1.4em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.sub-panel{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	background: var(--grey-light);
+	width: 100%;
+	z-index: 9999;
+	padding: 80px 10px;
+	overflow-x: hidden; 
+	transition: transform 0.15s ease-out;
+	transition-delay: 0.0s;
+	z-index: 500;
+}
+
+
+.sub-panel.hide{
+	transform: translateX(110%);
+	transition: transform 0.0s;
+	transition-delay: 0.5s;
+	z-index: 400;
+}
+
+.l-icon i{
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.notif,
+.message{
+	width: 100%;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	background: #fff;
+	box-shadow: 2px 1px 6px rgba(0,0,0,0.1);
+	transition: background 0.2s;
+}
+
+.notif:active{
+	background: var(--grey-lighter);
+}
+
+.notif a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+.notif-img,
+.message-img{
+	display: inline-block;
+	vertical-align: top;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.notif-img img,
+.message-img img{
+	height: 100%;
+	width: auto;
+}
+
+.notif-title{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.notif-title p{
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+.notif-title span{
+	font-size: 0.9em;
+	color: var(--text-lighter);
+}
+
+.message-author{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1.3em;
+	font-weight: 700;
+	transform: translateY(30%);
+	margin-left: 15px;
+}
+
+.message-content{
+	margin-top: 10px;
+}
+
+.talk-open{
+	float: right;
+}
+
+.all-messages{
+	width: 100%;
+	text-align: center;
+}
+
+.options-panel{
+	background: #fff;
+	padding: 80px 0;
+}
+
+.option{
+	border-bottom: 1px solid var(--grey-medium);
+}
+
+.option p{
+	margin-bottom: 0;
+}
+
+.option a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.last-time{
+	color: var(--grey-medium);
+}
+
 @media only screen and (min-width: 800px){
 	.header{
 		padding: 50px 150px;
@@ -186,9 +433,17 @@
 		width: 67%;
 		margin-right: 10%;
 	}
+
+	.sub-panel{
+		padding: 80px 80px;
+	}
+
+	.options-panel{
+		padding: 80px 0;
+	}
 }
 
-@media only screen and (min-width:1160px){
+@media only screen and (min-width:1248px){
 	.header-band,
 	.close-menu{
 		display: none;
@@ -252,6 +507,10 @@
 		padding: 6px 10px 9px;
 	}
 
+	.nav li a:active{
+		background: transparent;
+	}
+
 	.nav li a.active{
 		border-bottom: 5px solid var(--action-color);
 	}
@@ -261,6 +520,7 @@
 		display: inline-block;
 		float: right;
 		width: auto;
+		margin-top: 0;
 	}
 
 	.log-sign a{
@@ -298,6 +558,130 @@
 
 	.log-sign a:active{
 		background: var(--dgreen-light);
+	}
+
+	.logged-icon{
+		width: 130px;
+		bottom: auto;
+		top: 0;
+		right: 20px;
+		height: 55px;
+	}
+
+	.log-v-icons{
+		height: 100%;
+		transform: translateX(0);
+	}
+	
+	.l-icon{
+		height: 55px;
+		background: transparent;
+		border: none;
+		padding-top: 5px;
+		cursor: pointer;
+	}
+
+	.l-icon.current{
+		background: var(--action-color);
+	}
+
+	.close-panel{
+		cursor: pointer;
+		font-size: 0.8em;
+		padding: 1px 10px;
+    top: 7px;
+	}
+
+	.logged-panels{
+		right: 30px;
+		width: 450px;
+		height: 470px;
+		top: 60px;
+		background: #fff;
+		overflow: hidden;
+		border-radius: 5px;
+		box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+	}
+
+	.sub-panel{
+		transition-delay: 0.0s;
+		transition-duration: 0s;
+		border-radius: 5px;
+		padding: 45px 0 25px;
+		background: #fff;
+	}
+
+	.title-band{
+		border-radius: 5px 5px 0 0;
+		padding: 8px 15px;
+	}
+
+	.logged-panels.hide,
+	.sub-panel.hide{
+		transition-delay: 0.0s;
+		transition-duration: 0s;
+	}
+
+	.li-icon i{
+		font-size: 1.2em;
+	}
+
+	.title-band h4{
+		font-size: 1.1em;
+	}
+
+	.notif{
+		padding: 10px;
+		padding-bottom: 3px; 	
+	}
+
+	.notif-title{
+		margin-bottom: 5px;
+	}
+
+	.notif-title p{
+		font-size: 1em;
+		margin-bottom: 0;
+	}
+
+	.message-author p{
+		font-size: 0.8em;
+		margin-bottom: 0;
+	}
+	
+	.last-message p,
+	.notif-content p{
+		font-size: 0.9em;
+		padding-left: 70px;
+		margin-bottom: 0;
+	}
+
+	.notif, 
+	.message{
+		margin-bottom: 0;
+	}
+
+	.notif-count{
+		font-size: 0.8em;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+	}
+
+	.message-content {
+	    margin-top: 0;
+	}
+
+	.talk-open{
+		font-size: 0.8em;
+		padding: 5px 15px;
+		margin-top: 15px;
+	}
+
+	.all-messages{
+		width: 60%;
+		margin-top: 15px;
+		margin-left: 20%;
 	}
 
 }

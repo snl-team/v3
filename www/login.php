@@ -30,7 +30,7 @@
 		</div>
 		<div class="navigation">
 			<ul class="nav">
-				<li><a href="index.php#home" class="anchor-item">Accueil</a></li>
+				<li><a href="index.php#home" class="anchor-item active">Accueil</a></li>
 				<li><a href="index.php#about" class="anchor-item">A propos</a></li>
 				<li><a href="index.php#services" class="anchor-item">Services</a></li>
 				<li><a href="index.php#premium" class="anchor-item">Premium</a></li>
@@ -145,5 +145,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="ressources/js/parallax/parallax.js"></script>
 	<script src="ressources/js/front.js"></script>
+	<script src="ressources/js/home.js"></script>
 </body>
 </html>
