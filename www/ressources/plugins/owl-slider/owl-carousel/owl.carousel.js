@@ -1469,7 +1469,7 @@ if (typeof Object.create !== "function") {
         stopOnHover : false,
 
         navigation : false,
-        navigationText : ["prev", "next"],
+        navigationText : ["Précédente", "Suivante"],
         rewindNav : true,
         scrollPerPage : false,
 
@@ -1509,4 +1509,5 @@ if (typeof Object.create !== "function") {
         startDragging : false,
         afterLazyLoad: false
     };
+
 }(jQuery, window, document));

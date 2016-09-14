@@ -69,11 +69,10 @@
 .section-home{
 	min-height: 100%;
 	background: url(../images/background-dark.jpg);
-	background-attachment: fixed;
+	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-attachment: fixed;	
 }
 
 .section-content{
@@ -151,9 +150,11 @@
 }
 
 .pricing{
+	min-height: 475px;
 	background: #fff;
 	box-shadow: 2px 0px 2px rgba(0,0,0,0.1);
 	overflow: hidden;
+	border-radius: 5px;
 }
 
 .pricing-header{
@@ -170,10 +171,20 @@
 }
 
 .princing-show{
-	padding: 15px;
+	position: relative;
+	padding: 25px 20px;
 	text-align: center;
 	background: #f3f3f3;
-	padding-bottom: 50px;
+}
+
+.princing-show::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background: rgba(255,255,255,0.6);
 }
 
 .psi{
@@ -185,17 +196,17 @@
 }
 
 .fnum{
-	font-size: 1.8em;
+	font-size: 3em;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .free{
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .snum{
-	font-size: 0.8em;
+	font-size: 1.5em;
 }
 
 .snum span{
@@ -203,11 +214,20 @@
 }
 
 .princing-content{
-	padding: 20px 50px 80px;
+	padding: 20px 50px 20px;
 }
 
 .princing-content ul{
 	list-style-type: square;
+}
+
+.pricing-order{
+	text-align: center;
+	padding-top: 50px;
+}
+
+.pricing-order a{
+	width: 100%;
 }
 
 .princing-content ul li{
@@ -229,13 +249,13 @@
 
 .section-actu{
 	background: url(../images/news-bg.jpg);
-	background-position: center;
+	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .section-actu .section-content h3{
+	text-align: center;
 	font-size: 2em;
 	font-weight: 700;
 	color: #fff;
@@ -372,10 +392,14 @@
 	}
 
 	.pricing-container .d-col{
-		padding: 25px;	
+		padding: 5px;	
 	}
 
-	.princing-content{
+	.princing-show{
+		min-height: 90px;
+	}
+
+	.pricing-content{
 		padding: 20px 70px 80px;
 	}
 	

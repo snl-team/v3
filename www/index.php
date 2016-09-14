@@ -10,7 +10,10 @@
 	<link rel="stylesheet" href="ressources/css/login.css">
 	<link rel="stylesheet" href="ressources/css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
+	
+	<!-- Plugin Owl Carousel -->
+	<link rel="stylesheet" href="ressources/plugins/owl-slider/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="ressources/plugins/owl-slider/owl-carousel/owl.theme.css">
 
 </head>
 <body>
@@ -31,12 +34,13 @@
 			</form>				
 		</div>
 		<div class="navigation">
-			<ul class="nav">
-				<li><a href="#home" class="active">Accueil</a></li>
-				<li><a href="#about">A propos</a></li>
-				<li><a href="#premium">Premium</a></li>
-				<li><a href="#actualites">Actualités</a></li>
-				<li><a href="#">Emploi</a></li>
+			<ul class="nav" id="top-menu">
+				<li><a href="#home" class="anchor-item">Accueil</a></li>
+				<li><a href="#about" class="anchor-item">A propos</a></li>
+				<li><a href="#services" class="anchor-item">Services</a></li>
+				<li><a href="#premium" class="anchor-item">Premium</a></li>
+				<li><a href="#actualites" class="anchor-item">Actualités</a></li>
+				<li><a href="#temp">Emploi</a></li>
 			</ul>
 		</div>
 		<div class="log-sign clearfix">
@@ -65,7 +69,7 @@
 			<p>Menu</p>
 		</div>
 	</header>
-	<section class="section parallax-section section-home" id="home">
+	<section class="section img-section parallax-section section-home" id="home">
 		<div class="catchphrase">
 			<h1>Le premier réseau professionnel</h1>
 			<h2>Basé sur la méthodologie agile</h2>
@@ -92,7 +96,7 @@
 					</div>
 					<button class="button button-green">Inscription</button>
 					<div class="clear"></div>
-					<h4 class="sign-options"><i class="fa fa-plus-circle" aria-hidden="true"></i> Inscription à partir des réseaux sociaux</h4>
+					<h4 class="sign-options"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i> Inscription à partir des réseaux sociaux</h4>
 					<div class="connect-with">
 						<p><a href="#" class="network-log-button google"><i class="fa fa-google" aria-hidden="true"></i>Compte google</a></p>
 						<p><a href="#" class="network-log-button facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>facebook</a></p>
@@ -113,7 +117,7 @@
 			<p>DEBRIEFON est une plateforme collaborative de gestion de projet basée sur la méthodologie agile. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt aliquid illo, veritatis commodi ab minus repellendus, aut dolorum modi, vel pariatur mollitia ducimus. Quam magnam incidunt, obcaecati illum facilis et, perferendis repellendus amet voluptates reprehenderit, totam architecto mollitia repudiandae soluta excepturi. Eum numquam provident autem cumque impedit deleniti non.</p>
 		</div>
 	</section>
-	<section class="section section-reversed section-overed">
+	<section class="section section-reversed section-overed" id="services">
 		<div class="section-content d-container">
 			<div class="d-row">
 				<div class="d-col d-col-4">
@@ -193,6 +197,9 @@
 								<li>Item 5</li>
 								<li>Item 6</li>
 							</ul>
+							<div class="pricing-order">
+								<a href="#" class="button button-green">Commander</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -215,6 +222,9 @@
 								<li>Item 5</li>
 								<li>Item 6</li>
 							</ul>
+							<div class="pricing-order">
+								<a href="#" class="button button-green">Commander</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -237,49 +247,53 @@
 								<li>Item 5</li>
 								<li>Item 6</li>
 							</ul>
+							<div class="pricing-order">
+								<a href="#" class="button button-green">Commander</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section section-actu" id="actualites">
-		<div class="section-content">
-			<h3>Ils nous font confiance et ont décidé de vous partager leurs actualités</h3>
+	<section class="section" id="actualites">
+		<div class="block img-section section-actu">
+			<div class="section-content">
+				<h3>Ils nous font confiance et ont décidé de vous partager leurs actualités</h3>
+			</div>
 		</div>
-	</section>
-	<section class="section">
-		<div class="section-content">
-			<div class="news-slider">
-				<div class="news news-1">
-					<div class="news-info">
-						<div class="pro-account-img">
-							<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>							
+		<div class="block">
+			<div class="section-content">
+				<div class="news-slider" id="news-slider">
+					<div class="news news-1">
+						<div class="news-info">
+							<div class="pro-account-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>		
+							</div>
+							<div class="pro-account-name">
+								<a href="#">Entreprise 1</a><br>
+								<p>Management et Gestion de projet</p>
+							</div>
 						</div>
-						<div class="pro-account-name">
-							<a href="#">Entreprise 1</a><br>
-							<p>Management et Gestion de projet</p>
-						</div>
-					</div>
-					<div class="news-content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
-						<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
-					</div>
-				</div>
-				<div class="news-slider">
-				<div class="news news-2">
-					<div class="news-info">
-						<div class="pro-account-img">
-							<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>							
-						</div>
-						<div class="pro-account-name">
-							<a href="#">Entreprise 2</a><br>
-							<p>Management et Gestion de projet</p>
+						<div class="news-content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
+							<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
 						</div>
 					</div>
-					<div class="news-content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
-						<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+					<div class="news news-2">
+						<div class="news-info">
+							<div class="pro-account-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>	
+							</div>
+							<div class="pro-account-name">
+								<a href="#">Entreprise 2</a><br>
+								<p>Management et Gestion de projet</p>
+							</div>
+						</div>
+						<div class="news-content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo est error eaque, officiis, quia!
+							<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -319,12 +333,15 @@
 					<ul class="find-us">
 						<p>DEBRIEFON</p>
 						<li>4 rue de Pâques - 67000 Strasbourg - France</li>
+						<li><a href="#">Service clients</a></li>
+						<li><a href="#">Service Après Vente</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="ressources/plugins/owl-slider/owl-carousel/owl.carousel.js"></script>
 	<script src="ressources/js/parallax/parallax.js"></script>
 	<script src="ressources/js/front.js"></script>
 </body>

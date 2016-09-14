@@ -60,7 +60,7 @@
 }
 
 .log-sign{
-	position: fixed;
+	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -68,6 +68,7 @@
 }
 
 .log-sign a{
+	width: 100%;
 	float: left;
 	display: block;
 	text-align: center;
@@ -167,6 +168,14 @@
 }
 
 @media only screen and (min-width: 800px){
+	.header{
+		padding: 50px 150px;
+	}
+
+	.log-sign a{
+		width: 100%;
+	}
+
 	.header-band .logo{
 		display: inline-block;
 		overflow: visible;
@@ -179,7 +188,7 @@
 	}
 }
 
-@media only screen and (min-width:1110px){
+@media only screen and (min-width:1160px){
 	.header-band,
 	.close-menu{
 		display: none;
@@ -238,7 +247,7 @@
 	}
 
 	.nav li a{
-		font-size: 1em;
+		font-size: 0.9em;
 		border-bottom: 0;
 		padding: 6px 10px 9px;
 	}

@@ -30,10 +30,11 @@
 		</div>
 		<div class="navigation">
 			<ul class="nav">
-				<li><a href="index.php#home">Accueil</a></li>
-				<li><a href="index.php#about">A propos</a></li>
-				<li><a href="index.php#premium">Premium</a></li>
-				<li><a href="index.php#actualités">Actualités</a></li>
+				<li><a href="index.php#home" class="anchor-item">Accueil</a></li>
+				<li><a href="index.php#about" class="anchor-item">A propos</a></li>
+				<li><a href="index.php#services" class="anchor-item">Services</a></li>
+				<li><a href="index.php#premium" class="anchor-item">Premium</a></li>
+				<li><a href="index.php#actualites" class="anchor-item">Actualités</a></li>
 				<li><a href="#">Emploi</a></li>
 			</ul>
 		</div>
