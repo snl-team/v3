@@ -37,3 +37,8 @@
 /**** ALERTS CSS ****/
 /*******************/
 @import url(css-content/alerts.css);
+
+/*******************/
+/**** CONTAINERS CSS ****/
+/*******************/
+@import url(css-content/container.css);

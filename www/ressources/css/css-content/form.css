@@ -128,7 +128,8 @@
 		background: var(--grey-lighter);
 	}
 
-	.button-green:hover{
+	.form button.button-green:hover,
+	.form a.button-green:hover{
 		background: var(--action-color-hover);
 	}
 

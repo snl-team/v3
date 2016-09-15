@@ -8,6 +8,8 @@ body{
 	line-height: 1.6em;
 	color: var(--text-color);
 	background: #fff;
+	overflow-x: hidden;
+	position: relative;
 }
 
 *,
