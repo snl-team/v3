@@ -1,0 +1,303 @@
+.form h3,
+.link-from h3{
+	color: var(--action-color);
+	font-size: 1.5em;
+	margin-bottom: 25px;
+}
+
+.search-form{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.search-form .sfield{
+	position: relative;
+	width: 100%;
+}
+
+.search-form .sfield label{
+	position: absolute;
+	top: 0;
+	left: 15px;
+	display: inline-block;
+	transform: translateY(-120%);
+}
+
+.search-form .sfield input{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+}
+
+.search-form .sfield .search-submit{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline-block;
+	padding: 10px;
+	border: none;
+	background: var(--grey-light);
+	transition: background 0.2s;
+	cursor: pointer;
+}
+
+.search-form .sfield .search-submit span{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.form{
+	display: block;
+	width: 100%;
+	background: #fff;
+}
+
+.log-form{
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.field{
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.field label{
+	font-size: 1.2em;
+}
+
+.log-form .field label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+.field input{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid var(--grey);
+}
+
+.login-form .field input{
+	margin-top: 10px;
+	border: 1px solid var(--grey);
+}
+
+.form .button{
+	float: right;	
+}
+
+.forgot p{
+	margin-bottom: 15px;
+}
+
+.add-post-form{
+	display: inline-block;
+	width: 100%;
+	padding: 15px 0;
+}
+
+.add-post-form textarea{
+	width: 100%;
+	min-height: 120px;
+	border: 1px solid var(--grey);
+	border-radius: 3px;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.form-bottom{
+	position: relative;
+	margin-top: 5px;
+}
+
+.add-files{
+	display: inline-block;
+	height: auto;
+	overflow: hidden;
+	transition: opacity 0.2s;
+}
+
+.add-files img{
+	width: 100%;
+}
+
+.files-added{
+	display: none;
+	width: 100%;
+	padding: 25px 0;
+}
+
+.files-added.filled{
+}
+
+.file-present{
+	position: relative;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	margin-right: 20px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.6);
+	border-radius: 5px;
+}
+
+.file-present-img{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: rgba(255,255,255,0.4);
+	border-radius: 100%;
+}
+
+.file-present-img i{	
+	font-size: 1.3em;
+	color: #fff;
+	transform: translateY(1px);
+}
+
+.file-present-name{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-size: 0.8em;
+	background: #fff;
+	padding: 5px 10px;
+}
+
+.add-files-container{
+	width: 100%;
+	position: relative;
+}
+
+.add-files-options{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background: #fff;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+	padding: 25px;
+	transform: translateY(100%);
+	z-index: 1000;
+	transition: opacity 0.2s;
+}
+
+.add-files-options.open{
+}
+
+.add-files-options h4{
+	font-size: 1.2em;
+	margin-bottom: 25px;
+}
+
+.add-files-options ul{
+
+}
+
+.add-files-options ul li{
+	display: block;
+	margin-bottom: 15px;
+}
+
+.input-add.hide{
+	display: none;
+}
+
+.form .label-add{
+	float: none;
+}
+
+.label-add i{
+	margin-right: 5px;
+}
+
+.select-visibility{
+	position: absolute;
+	top: 0;
+	right: 95px;
+	width: 170px;
+	font-size: 1em;
+	padding: 5px 10px;
+	outline: none;
+	border: 1px solid var(--grey);
+	border-radius: 3px;
+}
+
+.select-visibility *{
+}
+
+.new-post{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px 15px;
+}
+
+@media only screen and (min-width:1100px){
+	.search-form .sfield input{
+		padding: 7px 10px;
+		padding-right: 40px;
+	}
+
+	.search-form .sfield .search-submit{
+		padding: 6px 10px 8px;
+	}
+
+	.search-form .sfield .search-submit:hover{
+		background: var(--grey);
+	}
+
+	.field label{
+		font-size: 1em;
+	}
+
+	.form .button{
+		transition: background 0.2s;
+		cursor: pointer;
+	}
+
+	.form .button:hover{
+		background: var(--grey-lighter);
+	}
+
+	.form button.button-green:hover,
+	.form a.button-green:hover{
+		background: var(--action-color-hover);
+	}
+
+	.form .button-green:hover{
+		background: var(--grey-lighter);
+		background: var(--action-color-hover);
+	}
+	
+	.add-post-form textarea{
+		min-height: 160px;
+	}
+
+	.add-files{
+		cursor: pointer;
+	}
+
+	.add-files:hover{
+		opacity: 0.8;
+	}
+}
