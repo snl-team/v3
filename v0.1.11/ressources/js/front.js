@@ -1,0 +1,166 @@
+$(document).ready(function(){
+
+	//global variables
+	var windowWidth = $(window).width();
+
+
+	//global functions
+	var cl = function(tolog){
+		console.log(tolog)
+	}
+
+	var animatedScroll = function(){
+		$('a[href^="#"]').click(function(){
+			var $target = $(this).attr("href");
+			if($target != '#'){
+				$('html, body').animate({scrollTop:$($target).offset().top - 50 + 'px'}, 250);
+				return false;				
+			}
+		});
+	}();
+
+	var mobileMenu = function(){
+		var button = $('.hamb-button'),
+				menu = $('.header'),
+				icons = $('.logged-icon'),
+				close = $('.close-menu');
+		button.click(function(){
+			if(menu.hasClass('open')){
+				menu.removeClass('open');
+				icons.removeClass('shown');
+				$('body').removeClass('noverflow');
+			}else{
+				menu.addClass('open');
+				icons.addClass('shown');
+				$('body').addClass('noverflow');
+			}
+		});
+		close.click(function(){
+			menu.removeClass('open');
+			icons.removeClass('shown');
+			$('body').removeClass('noverflow');
+		});
+		$('.nav li').click(function(){
+			menu.removeClass('open');
+		});
+	}
+
+	var mobileIcon = function(){
+		var icon = $('.l-icon');
+		icon.each(function(){
+			var data = $(this).attr('data-icon'),
+					subPanel = $('.sub-panel-'+data);
+			$(this).click(function(){
+				$('.close-panel').addClass('on');
+				$('.sub-panel').removeClass('remove');
+				if(subPanel.hasClass('hide')){
+					$('.sub-panel').addClass('hide');
+					subPanel.removeClass('hide');
+				}else{
+					subPanel.addClass('hide');
+				}
+			});
+		});
+		$('.close-panel').click(function(){
+			$('.close-panel').removeClass('on');
+			$('.sub-panel').addClass('remove');
+		});
+	}
+
+	var desktopIcon = function(){
+		var icon = $('.l-icon');
+		icon.each(function(){
+			var clickCoutn = 0;
+			var desktopData = $(this).attr('data-icon'),
+					desktopSubPanel = $('.sub-panel-'+desktopData);
+			$(this).click(function(){
+				if(desktopSubPanel.hasClass(desktopData+'-panel')){
+					desktopSubPanel.addClass('hide');
+					desktopSubPanel.removeClass(desktopData+'-panel');
+				}else{
+					$('.sub-panel').addClass('hide');
+					$('.sub-panel').removeClass('notifications-panel');
+					$('.sub-panel').removeClass('messages-panel');
+					$('.sub-panel').removeClass('options-panel');
+					desktopSubPanel.addClass(desktopData+'-panel');
+					desktopSubPanel.removeClass('hide');
+				}
+			});
+		});
+		$('.toggle').each(function(){
+				$(this).click(function(){
+					$('.sub-panel').addClass('hide');								
+					$('.sub-panel').removeClass('notifications-panel');
+					$('.sub-panel').removeClass('messages-panel');
+					$('.sub-panel').removeClass('options-panel');
+				});
+		});
+		$('.header').click(function(){
+			$('.sub-panel').addClass('hide');								
+			$('.sub-panel').removeClass('notifications-panel');
+			$('.sub-panel').removeClass('messages-panel');
+			$('.sub-panel').removeClass('options-panel');
+		});
+	}
+
+	var floatingMenu = function(){
+		var delayTime = 200;
+		$('.action-button').each(function(){
+			var floatingMenu = $(this).next('.floating-menu'),
+					floatinButton = $(document).find('.floating-button');
+			$(this).click(function(){
+				if(floatingMenu.hasClass('open')){
+					floatingMenu.removeClass('open');
+				$('body').removeClass('noverflow');
+				}else{
+					floatingMenu.addClass('open');
+				$('body').addClass('noverflow');
+				}
+			});
+		});
+		$('.floating-button').each(function(){
+			var dataFloating = $(this).attr('data-floating');
+			var sidebar = $('.'+dataFloating)
+			$(this).click(function(){
+				$('.close-sidebar').addClass('on');
+				$(this).parent().removeClass('open');
+				$('.sidebar').removeClass('on');
+				sidebar.addClass('on');
+			});
+		});
+
+		$('.close-sidebar').click(function(){
+			$(this).removeClass('on');
+			$('.sidebar').removeClass('on');
+		});
+	};
+
+
+	//execution
+	if(windowWidth > 1100){
+		$('.parallax-section').parallax('center', 0.15, 0.1, true);		
+	}
+
+	var responsiveMenu = function(){
+		if(windowWidth < 1248){
+			mobileMenu();
+			mobileIcon();
+			floatingMenu();
+		}
+		else if(windowWidth > 1248){	
+			desktopIcon();
+		}		
+	}
+	
+	$(document).ready(function(){
+		responsiveMenu();		
+	});
+
+	$(window).resize(function(){
+		windowWidth = $(window).width();
+		responsiveMenu();	
+	});
+
+}) //end of jQuery
+
+
