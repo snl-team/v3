@@ -7,14 +7,8 @@
 	<link rel="stylesheet" href="ressources/css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="ressources/css/dgrid.css">
 	<link rel="stylesheet" href="ressources/css/global.css">
-	<link rel="stylesheet" href="ressources/css/login.css">
-	<link rel="stylesheet" href="ressources/css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link rel="icon" href="ressources/images/favicon.png" />
-	
-	<!-- Plugin Owl Carousel -->
-	<link rel="stylesheet" href="ressources/plugins/owl-slider/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="ressources/plugins/owl-slider/owl-carousel/owl.theme.css">
 
 </head>
 <body>
@@ -39,7 +33,48 @@
 				<li><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a></li>
 				<li><a href="#" class=""><i class="fa fa-user" aria-hidden="true"></i>Profil</a></li>
 				<li><a href="#" class=""><i class="fa fa-cogs" aria-hidden="true"></i>Gestion de projet</a></li>
-				<li><a href="#" class=""><i class="fa fa-th" aria-hidden="true"></i>Applications</a></li>
+				<li class="has-submenu">
+					<a href="#" class=""><i class="fa fa-th" aria-hidden="true"></i>Applications</a>
+					<div class="submenu">
+						<div class="submenu-img">
+							<a href="#" class="Dcloud">
+								<img src="ressources/icons/dcloud.png" alt="">
+								<p>Dcloud</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Emails">
+								<img src="ressources/icons/emails.png" alt="">
+								<p>Emails</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Fichiers-lourds">
+								<img src="ressources/icons/heavy-transfert.png" alt="">
+								<p>Fichiers lourds</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Newsletters">
+								<img src="ressources/icons/newsletter.png" alt="">
+								<p>Newsletters</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Kanboards">
+								<img src="ressources/icons/kanboards.png" alt="">
+								<p>Kanboards</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Agenda">
+								<img src="ressources/icons/agenda.png" alt="">
+								<p>Agenda</p>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</header>
@@ -164,7 +199,7 @@
 		<p>Fermer</p>
 	</div>
 	<div class="post-header user-header">
-		<div class="user-header-container user">
+		<div class="user-header-container user" style="background-image: url(ressources/images/cover.jpg);">
 			<div class="post-img">
 				<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
 			</div>
@@ -436,6 +471,12 @@
 			<div class="channel-options">
 				<div class="channel-option-title">
 					<h4>Options du channel : <span>#Channel 1</span></h4>
+					<!--
+						Utilisateur
+						Groupe utilisateur
+						Entreprises
+						Thèmes / hashtags
+					-->
 				</div>
 				<form action="#" method="POST" class="form">
 					<div class="field nol">

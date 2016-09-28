@@ -7,7 +7,7 @@ body{
 	font-weight: 400;
 	line-height: 1.6em;
 	color: var(--text-color);
-	background: #fff;
+	background: var(--grey-light);
 	overflow-x: hidden;
 	position: relative;
 }
@@ -20,7 +20,8 @@ body{
 
 input,
 button,
-textarea{
+textarea,
+select{
 	font-family:'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -29,14 +30,16 @@ textarea{
 input,
 button,
 textarea,
-a{
+a,
+select{
 	outline: none;	
 }
 
 input,
 button,
 textarea,
-i{
+i,
+select{
 	color: var(--text-color);
 }
 

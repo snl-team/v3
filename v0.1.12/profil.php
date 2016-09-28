@@ -39,7 +39,48 @@
 				<li><a href="#" class=""><i class="fa fa-home" aria-hidden="true"></i>Accueil</a></li>
 				<li><a href="#" class="active"><i class="fa fa-user" aria-hidden="true"></i>Profil</a></li>
 				<li><a href="#" class=""><i class="fa fa-cogs" aria-hidden="true"></i>Gestion de projet</a></li>
-				<li><a href="#" class=""><i class="fa fa-th" aria-hidden="true"></i>Applications</a></li>
+				<li class="has-submenu">
+					<a href="#" class=""><i class="fa fa-th" aria-hidden="true"></i>Applications</a>
+					<div class="submenu">
+						<div class="submenu-img">
+							<a href="#" class="Dcloud">
+								<img src="ressources/icons/dcloud.png" alt="">
+								<p>Dcloud</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Emails">
+								<img src="ressources/icons/emails.png" alt="">
+								<p>Emails</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Fichiers-lourds">
+								<img src="ressources/icons/heavy-transfert.png" alt="">
+								<p>Fichiers lourds</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Newsletters">
+								<img src="ressources/icons/newsletter.png" alt="">
+								<p>Newsletters</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Kanboards">
+								<img src="ressources/icons/kanboards.png" alt="">
+								<p>Kanboards</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Agenda">
+								<img src="ressources/icons/agenda.png" alt="">
+								<p>Agenda</p>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</header>
@@ -163,148 +204,6 @@
 	<div class="close-sidebar">
 		<p>Fermer</p>
 	</div>
-	<!--<div class="post-header user-header">
-		<div class="user-header-container user">
-			<div class="post-img">
-				<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
-			</div>
-			<div class="post-user">
-				<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
-			</div>
-			<div class="clear"></div>
-			<div class="user-info-container">
-				<div class="user-info">
-					<p>Posts</p>
-					<span>128</span>
-				</div>
-				<div class="user-info">
-					<p>Abonnements</p>
-					<span>80</span>
-				</div>
-				<div class="user-info">
-					<p>Abonnés</p>
-					<span>10</span>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-	</div>
-	<div class="sidebar toolbar toggle">
-		<div class="sidebar-header">
-			<div class="sidebar-icon active" id="hashtag"><i class="fa fa-hashtag" aria-hidden="true"></i></div>
-			<div class="sidebar-icon" id="briefcase"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-			<div class="sidebar-icon" id="comments"><i class="fa fa-comments" aria-hidden="true"></i></div>
-			<div class="sidebar-icon" id="users"><i class="fa fa-users" aria-hidden="true"></i></div>
-			<div class="clear"></div>
-		</div>
-		<div class="sidebar-content d-scrollbar hashtag open">
-			<div class="sidebar-content-header">
-				<h4><i class="fa fa-hashtag" aria-hidden="true"></i> Channels</h4>
-			</div>
-			<div class="sidebar-content-content">
-				<ul>
-					<li><a href="#">#Channel 1 <span class="channel-new">5</span></a></li>
-					<li><a href="#">#Channel 2</a></li>
-					<li><a href="#">#Channel 3</a></li>
-					<li><a href="#">#Channel 4</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="sidebar-content d-scrollbar briefcase">
-			<div class="sidebar-content-header">
-				<h4><i class="fa fa-briefcase" aria-hidden="true"></i> Projets</h4>
-			</div>
-			<div class="sidebar-content-content">
-				<ul>
-					<li><a href="#">Item 1</a></li>
-					<li><a href="#">Item 2</a></li>
-					<li><a href="#">Item 3</a></li>
-					<li><a href="#">Item 4</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="sidebar-content d-scrollbar comments">
-			<div class="sidebar-content-header">
-				<h4><i class="fa fa-comments" aria-hidden="true"></i> Messages</h4>
-			</div>
-			<div class="sidebar-content-content">
-				<ul>
-					<li><div class="contact-img online"><img src="ressources/images/user-1.jpg" alt=""></div> <a href="#">Jean Valjean </a>
-					<a href="#" class="last-sidebar-message">
-						<span><em>08:36</em> Bonjour !</span>
-					</a></li>
-					<li><div class="contact-img offline"><img src="ressources/images/user-1.jpg" alt=""></div> <a href="#">Jean Valjean </a>
-					<a href="#" class="last-sidebar-message">
-						<span><em>08:36</em> Bonjour !</span>
-					</a></li>
-					<li><div class="contact-img online"><img src="ressources/images/user-1.jpg" alt=""></div> <a href="#">Jean Valjean </a>
-					<a href="#" class="last-sidebar-message">
-						<span><em>08:36</em> Bonjour !</span>
-					</a></li>
-					<li><div class="contact-img online"><img src="ressources/images/user-1.jpg" alt=""></div> <a href="#">Jean Valjean </a>
-					<a href="#" class="last-sidebar-message">
-						<span><em>08:36</em> Bonjour !</span>
-					</a></li>
-					<li><div class="contact-img online"><img src="ressources/images/user-1.jpg" alt=""></div> <a href="#">Jean Valjean </a>
-					<a href="#" class="last-sidebar-message">
-						<span><em>08:36</em> Bonjour !</span>
-					</a></li>
-					<li><div class="contact-img online"><img src="ressources/images/user-1.jpg" alt=""></div> <a href="#">Jean Valjean </a>
-					<a href="#" class="last-sidebar-message">
-						<span><em>08:36</em> Bonjour !</span>
-					</a></li>
-					<li><div class="contact-img online"><img src="ressources/images/user-1.jpg" alt=""></div> <a href="#">Jean Valjean </a>
-					<a href="#" class="last-sidebar-message">
-						<span><em>08:36</em> Bonjour !</span>
-					</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="sidebar-content d-scrollbar users">
-			<div class="sidebar-content-header">
-				<h4><i class="fa fa-users" aria-hidden="true"></i> Teams</h4>
-			</div>
-			<div class="sidebar-content-content">
-				<ul>
-					<li>
-						<div class="contact-img team-contact-img">
-							<a href="#">
-								<div class="team-letter"></div>
-							</a>
-						</div> 
-						<a href="#" class="team-name">Hello </a>
-					</li>
-					<li>
-						<div class="contact-img team-contact-img">
-							<a href="#">
-								<div class="team-letter"></div>
-							</a>
-						</div> 
-						<a href="#" class="team-name">Equipe 1 </a>
-					</li>
-					<li>
-						<div class="contact-img team-contact-img">
-							<a href="#">
-								<div class="team-letter"></div>
-							</a>
-						</div> 
-						<a href="#" class="team-name">Marque </a>
-					</li>
-					<li>
-						<div class="contact-img team-contact-img">
-							<a href="#">
-								<div class="team-letter"></div>
-							</a>
-						</div> 
-						<a href="#" class="team-name">Jeannot </a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="sidebar todo toggle">
-		
-	</div>-->
 	<div class="infobar toggle profil-infobar">
 		<div class="infos relations">
 			<h4>Entrez en relation avec</h4>
@@ -443,29 +342,31 @@
 			<p>@tamount</p>
 		</div>		
 		<div class="darker-modify"></div>
-		<div class="modify-img modify-pro">
+		<div class="modify-img d-scrollbar modify-pro">
 		<div class="close-modify">
 			<i class="fa fa-times" aria-hidden="true"></i>
 		</div>
 			<form action="#" method="#">
-				<h4>Changer l'image de profil</h4>
+				<h4>Changer l'image de profil <em>(Largeur conseillée : 150px)</em></h4>
 				<div class="alert info"><i class="fa fa-info-circle" aria-hidden="true"></i><p class="selected-file"> Aucune image choisie</p></div>
 				<label for="modify-img-pro" class="button">Choisir une image</label>
 				<input type="file" class="modify-file dn" id="modify-img-pro" required>
 				<input type="submit" value="Enregistrer" name="pro-submit" class="button button-green submit">
 			</form>
+			<div class="preview-image"><img src="" alt="" /></div>
 		</div>
-		<div class="modify-img modify-cover">
+		<div class="modify-img d-scrollbar modify-cover">
 		<div class="close-modify">
 			<i class="fa fa-times" aria-hidden="true"></i>
 		</div>
 			<form action="#" method="#">
-				<h4>Changer l'image de fond</h4>
+				<h4>Changer l'image de fond <em>(Largeur conseillée : 1400px)</em></h4>
 				<div class="alert info"><i class="fa fa-info-circle" aria-hidden="true"></i><p class="selected-file"> Aucune image choisie</p></div>
 				<label for="modify-img-cover" class="button">Choisir une image</label>
 				<input type="file" class="modify-file dn" id="modify-img-cover" required>
 				<input type="submit" value="Enregistrer" name="cover-submit" class="button button-green submit">
 			</form>
+			<div class="preview-image"><img src="" alt="" /></div>
 		</div>
 	</div>
 	<div class="edit-profil-band">
@@ -479,25 +380,39 @@
 		</ul>
 		<div class="clear"></div>
 	</div>
+	<div class="notification-bloc">
+		<div class="notification success-notif">
+			<i class="fa fa-dot-circle-o" aria-hidden="true"></i> Profil mis à jours
+		</div>
+		<div class="notification error-notif">
+			<i class="fa fa-dot-circle-o" aria-hidden="true"></i> Erreur lors de la soumission du formulaire
+		</div>
+	</div>
 	<div class="main toggle profil-main">
 		<div class="profil-content profil-content-profil profil-info active">
 			<div class="profil-info-header">
 				<h2>Profil de <span>Tom Amount</span></h2>
 			</div>
 			<div class="profil-bloc">
-				<div class="edit-profil">
-					<i class="fa fa-pencil" aria-hidden="true"></i> <span>Editer</span> 
-				</div>
+				<!--<div class="edit-profil">
+					<i class="fa fa-pencil" aria-hidden="true"></i> <span>Editer</span>
+				</div>-->
 				<p class="profil-bloc-title">Poste actuel</p>
 				<div class="profil-bloc-content">
 					<p>Directeur Recherche & développement <a href="#">@entreprise1</a> </p>
 				</div>
 				<div class="edit-profil-form">
+					<div class="close-edit">
+						<i class="fa fa-times" aria-hidden="true"></i><span> Fermer</span>
+					</div>
 					<form action="#" method="POST">
-						<div class="field">
+						<div class="field inline-field">
 							<label for="poste-actuel">Renseignez votre nouveau poste actuel</label>
-							<input type="text" name="poste-actuel" class="text-input small-input np" id="poste-actuel">
-							<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+							<input type="text" name="poste-actuel" class="text-input small-input" id="poste-actuel">
+							<div class="submit-bloc">
+								<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+							<div class="clear"></div>
+							</div>
 							<div class="clear"></div>
 						</div>
 					</form>
@@ -512,11 +427,18 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam placeat cum excepturi perspiciatis molestias expedita quidem earum animi blanditiis atque, nisi dolor incidunt asperiores nulla temporibus eaque tempore corrupti minima nemo repellat provident, fugiat, error eos, quia maxime? Iusto quod animi harum delectus vero explicabo voluptates assumenda incidunt nisi, dolorum?</p>
 				</div>
 				<div class="edit-profil-form">
+					<div class="close-edit">
+						<i class="fa fa-times" aria-hidden="true"></i><span> Fermer</span>
+					</div>
+					<p>Editer votre biographie</p>
 					<form action="#" method="POST">
-						<div class="field">
-							<label for="biographie">Editer votre biographie <i class="fa fa-trash-o" aria-hidden="true" title="Nettoyer"></i></label>
+						<div class="field inline-field">
+							<label for="biographie">Biographie <i class="fa fa-trash-o" aria-hidden="true" title="Nettoyer"></i></label>
 							<textarea name="biographie" class="textarea-medium mb d-scrollbar" id="biographie"></textarea>
-							<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+							<div class="submit-bloc">
+								<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+							<div class="clear"></div>
+							</div>
 							<div class="clear"></div>
 						</div>
 					</form>
@@ -531,7 +453,47 @@
 					<ul>
 						<li>
 							<div class="experience-bloc">
-								<h5>Direceteur recherche et développement <i class="fa fa-trash-o" aria-hidden="true"></i><i class="fa fa-pencil" aria-hidden="true"></i></h5>
+								<h5>Directeur recherche et développement <i class="fa fa-trash-o remove-link" aria-hidden="true"></i><div class="remove-ask"> Supprimer cette information ? <a href="#">oui</a> <div>non</div></div><i class="fa fa-pencil edit-link" aria-hidden="true"></i></h5>
+								<span><a href="#">Entreprise 2</a></span>
+								<em>juin 2015 - Ajourd'hui</em>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, officiis.</p>
+							</div>							
+							<div class="edit-profil-form modify-profil-form">
+								<div class="close-edit">
+									<i class="fa fa-times" aria-hidden="true"></i><span> Fermer</span>
+								</div>
+								<p><span>Editer</span> une experience</p>
+								<form action="#" data-controller="controller" method="POST">
+									<div class="field inline-field">
+										<label for="experience">Votre experience</label>
+										<input name="experience" class="mb" id="experience">
+										<div class="clear"></div>
+									</div>
+									<div class="field inline-field">
+										<label for="Entreprise">Entreprise</label>
+										<input name="Entreprise" class="mb" id="Entreprise">
+										<div class="clear"></div>
+									</div>
+									<div class="field inline-field">
+										<label for="Periode">Période</label>
+										<input name="Periode" class="mb" id="Periode">
+										<div class="clear"></div>
+									</div>
+									<div class="field inline-field small-textarea">
+										<label for="comment">Commentaire</label>
+										<textarea name="comment" id="comment" class=""></textarea>
+										<div class="clear"></div>
+									</div>
+									<div class="submit-bloc">
+										<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+										<div class="clear"></div>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<div class="experience-bloc">
+								<h5>Directeur recherche et développement <i class="fa fa-trash-o remove-link" aria-hidden="true"></i><div class="remove-ask"> Supprimer cette information ? <a href="#">oui</a> <div>non</div></div><i class="fa fa-pencil edit-link" aria-hidden="true"></i></h5>
 								<span><a href="#">Entreprise 2</a></span>
 								<em>juin 2015 - Ajourd'hui</em>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, officiis.</p>
@@ -539,15 +501,7 @@
 						</li>
 						<li>
 							<div class="experience-bloc">
-								<h5>Direceteur recherche et développement <i class="fa fa-trash-o" aria-hidden="true"></i><i class="fa fa-pencil" aria-hidden="true"></i></h5>
-								<span><a href="#">Entreprise 2</a></span>
-								<em>juin 2015 - Ajourd'hui</em>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, officiis.</p>
-							</div>
-						</li>
-						<li>
-							<div class="experience-bloc">
-								<h5>Direceteur recherche et développement <i class="fa fa-trash-o" aria-hidden="true"></i><i class="fa fa-pencil" aria-hidden="true"></i></h5>
+								<h5>Directeur recherche et développement <i class="fa fa-trash-o remove-link" aria-hidden="true"></i><div class="remove-ask"> Supprimer cette information ? <a href="#">oui</a> <div>non</div></div><i class="fa fa-pencil edit-link" aria-hidden="true"></i></h5>
 								<span><a href="#">Entreprise 2</a></span>
 								<em>juin 2015 - Ajourd'hui</em>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, officiis.</p>
@@ -556,23 +510,35 @@
 					</ul>
 				</div>
 				<div class="edit-profil-form">
-					<form action="#" method="POST">
-						<div class="field">
+					<div class="close-edit">
+						<i class="fa fa-times" aria-hidden="true"></i><span> Fermer</span>
+					</div>
+					<p><span>Ajouter</span> une experience</p>
+					<form action="#" data-controller="controller" method="POST">
+						<div class="field inline-field">
 							<label for="experience">Votre experience</label>
 							<input name="experience" class="mb" id="experience">
 							<div class="clear"></div>
 						</div>
-						<div class="field">
+						<div class="field inline-field">
 							<label for="Entreprise">Entreprise</label>
 							<input name="Entreprise" class="mb" id="Entreprise">
 							<div class="clear"></div>
 						</div>
-						<div class="field">
+						<div class="field inline-field">
 							<label for="Periode">Période</label>
 							<input name="Periode" class="mb" id="Periode">
 							<div class="clear"></div>
 						</div>
-						<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+						<div class="field inline-field small-textarea">
+							<label for="comment">Commentaire</label>
+							<textarea name="comment" id="comment" class=""></textarea>
+							<div class="clear"></div>
+						</div>
+						<div class="submit-bloc">
+							<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+							<div class="clear"></div>
+						</div>
 					</form>
 				</div>
 			</div>	
@@ -585,7 +551,7 @@
 					<ul>
 						<li>
 							<div class="experience-bloc">
-								<h5>Master physique des particules <i class="fa fa-trash-o" aria-hidden="true"></i><i class="fa fa-pencil" aria-hidden="true"></i></h5>
+								<h5>Master physique des particules <i class="fa fa-trash-o remove-link" aria-hidden="true"></i><div class="remove-ask"> Supprimer cette information ? <a href="#">oui</a> <div>non</div></div> <i class="fa fa-pencil edit-link" aria-hidden="true"></i></h5>
 								<span><a href="#">Université de strasbourg</a></span>
 								<em>juin 2010</em>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, officiis.</p>
@@ -593,23 +559,36 @@
 						</li>
 					</ul>
 				</div>
-				<div class="edit-profil-form">
+				<div class="edit-profil-form last-page-form">
+					<div class="close-edit">
+						<i class="fa fa-times" aria-hidden="true"></i><span> Fermer</span>
+					</div>
+					<p><span>Ajouter</span> un diplôme ou une certification</p>
 					<form action="#" method="POST">
-						<div class="field">
-							<label for="diplome">Diplôme ou une certification</label>
+						<div class="field inline-field">
+							<label for="diplome">Diplôme ou certification</label>
 							<input name="diplome" class="mb" id="diplome">
 							<div class="clear"></div>
 						</div>
-						<div class="field">
+						<div class="field inline-field">
 							<label for="ecole">Ecole</label>
 							<input name="ecole" class="mb" id="ecole">
 							<div class="clear"></div>
 						</div>
-						<div class="field">
+						<div class="field inline-field">
 							<label for="optention">Année d'optention</label>
 							<input name="optention" class="mb" id="optention">
+							<div class="clear"></div>
+						</div>						
+						<div class="field inline-field small-textarea">
+							<label for="comment">Commentaire</label>
+							<textarea name="comment" id="comment" class=""></textarea>
+							<div class="clear"></div>
 						</div>
-						<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+						<div class="submit-bloc">
+							<input type="submit" value="Enregistrer" class="button button-green submit nm button-float-r">
+							<div class="clear"></div>
+						</div>
 						<div class="clear"></div>
 					</form>
 				</div>
@@ -702,7 +681,7 @@
 							<div class="post-actions-content">
 								<h4>Citer ce post <span class="button button-small cancel">Annuler</span></h4>
 								<form action="" class="form">
-									<div class="field">
+									<div class="field inline-field">
 										<label for="quote-comment" class="hide-label">Ajouter un commentaire</label>
 										<textarea name="quote-comment" id="quote-comment" placeholder="Ajouter un commentaire"></textarea>
 									</div>
@@ -722,7 +701,7 @@
 							<div class="post-actions-content dn">
 								<h4>Répondre à <span class="user-respond"><!-- PHP TODO [Insérer le nom de l'utilisateur à qui répondre] --></span><span class="button button-small cancel">Annuler</span></h4>
 								<form action="" class="form">
-									<div class="field">
+									<div class="field inline-field">
 										<label for="quote-comment" class="hide-label">Répondre à <!-- PHP TODO [Insérer le nom de l'utilisateur à qui répondre] --></label>
 										<textarea name="quote-comment" id="quote-comment" rows="5" placeholder="Répondre à"></textarea>
 									</div>
@@ -749,10 +728,269 @@
 			<div class="profil-info-header">
 				<h2>Relations de <span>Tom Amount</span><em class="numbers"></em></h2>
 			</div>
+			<div class="d-container">
+				<div class="d-row">
+					<div class="d-col d-col-4">
+						<form action="#" method="POST" class="form">
+							<div class="field">
+								<label for="search-bar1" class="dn">Rechercher parmis les relations</label>
+								<input type="text" id="search-bar1" class="input full-border" placeholder="Rechercher parmis les relations">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="d-row">
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Wade Wilson <span>@deadpool</span></p></a></div>
+								<div class="user-title"><p>Mercenaire <a href="#">@ttention</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 relation-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Tom Amount <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Directeur Recherche & Développement <a href="#">@entreprise1</a></p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
 		</div>
 		<div class="profil-content profil-content-follow">
 			<div class="profil-info-header">
 				<h2>Abonnements de <span>Tom Amount</span><em class="numbers"></em></h2>
+			</div>
+			<div class="d-container">
+				<div class="d-row">
+					<div class="d-col d-col-4">
+						<form action="#" method="POST" class="form">
+							<div class="field">
+								<label for="search-bar2" class="dn">Rechercher parmis les abonnements</label>
+								<input type="text" id="search-bar2" class="input full-border" placeholder="Rechercher parmis les abonnements">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="d-row">
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 1 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 1 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 1 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 1 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 6 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 1 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 2 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="d-col d-col-4 follow-col">
+						<div class="post-header">
+							<div class="post-img">
+								<a href="#"><img src="ressources/images/entreprise-tmp.png" alt=""></a>
+							</div>
+							<div class="post-user">
+								<div class="user-name"><a href="#"><p>Entreprise 1 <span>@tamount</span></p></a></div>
+								<div class="user-title"><p>Recherche & Développement</p></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
 			</div>
 		</div>
 		<div class="profil-content profil-content-medias">

@@ -8,11 +8,14 @@
 
 .alert p{
 	display: inline-block;
+	vertical-align: top;
 	color: #fff;
 	margin-bottom: 0;
 }
 
 .alert p i{
+	display: inline-block;
+	vertical-align: top;
 	margin-right: 10px;
 	color: #fff;
 	font-size: 1.2em;
@@ -26,6 +29,10 @@
 	transform: translateY(1px);
 }
 
+.alert p strong{
+	font-weight: 700;
+}
+
 .error{
 	background: var(--error);
 }
@@ -36,4 +43,9 @@
 
 .info{
 	background: var(--info);
+}
+
+.danger{
+	background: var(--danger);
+
 }

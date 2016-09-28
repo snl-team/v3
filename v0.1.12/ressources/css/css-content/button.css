@@ -15,6 +15,12 @@ input.button-small,
 	padding: 3px 15px;
 }
 
+.field input.button-medium,
+input.button-medium,
+.button-medium{
+	padding: 7px 15px;
+}
+
 .field input.nm,
 input.nm,
 .nm{

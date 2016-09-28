@@ -7,14 +7,8 @@
 	<link rel="stylesheet" href="ressources/css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="ressources/css/dgrid.css">
 	<link rel="stylesheet" href="ressources/css/global.css">
-	<link rel="stylesheet" href="ressources/css/login.css">
-	<link rel="stylesheet" href="ressources/css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link rel="icon" href="ressources/images/favicon.png" />
-	
-	<!-- Plugin Owl Carousel -->
-	<link rel="stylesheet" href="ressources/plugins/owl-slider/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="ressources/plugins/owl-slider/owl-carousel/owl.theme.css">
 
 </head>
 <body>
@@ -39,7 +33,49 @@
 				<li><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a></li>
 				<li><a href="#" class=""><i class="fa fa-user" aria-hidden="true"></i>Profil</a></li>
 				<li><a href="#" class=""><i class="fa fa-cogs" aria-hidden="true"></i>Gestion de projet</a></li>
-				<li><a href="#" class=""><i class="fa fa-th" aria-hidden="true"></i>Applications</a></li>
+				<li class="has-submenu">
+					<a href="#" class=""><i class="fa fa-th" aria-hidden="true"></i>Applications</a>
+					<div class="submenu">
+						<div class="submenu-img">
+							<a href="#" class="Dcloud">
+								<img src="ressources/icons/dcloud.png" alt="">
+								<p>Dcloud</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Emails">
+								<img src="ressources/icons/emails.png" alt="">
+								<p>Emails</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Fichiers-lourds">
+								<img src="ressources/icons/heavy-transfert.png" alt="">
+								<p>Fichiers lourds</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Newsletters">
+								<img src="ressources/icons/newsletter.png" alt="">
+								<p>Newsletters</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Kanboards">
+								<img src="ressources/icons/kanboards.png" alt="">
+								<p>Kanboards</p>
+							</a>
+						</div>
+						<div class="submenu-img">
+							<a href="#" class="Agenda">
+								<img src="ressources/icons/agenda.png" alt="">
+								<p>Agenda</p>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				
 			</ul>
 		</div>
 	</header>
@@ -164,7 +200,7 @@
 		<p>Fermer</p>
 	</div>
 	<div class="post-header user-header">
-		<div class="user-header-container user">
+		<div class="user-header-container user" style="background-image: url(ressources/images/cover.jpg);">
 			<div class="post-img">
 				<a href="#"><img src="ressources/images/user-me.jpg" alt=""></a>
 			</div>
@@ -311,8 +347,177 @@
 			</div>
 		</div>
 	</div>
-	<div class="sidebar todo toggle">
-		
+	<div class="sidebar todo toggle d-scrollbar">
+		<div class="todo-header">
+			<h4><i class="fa fa-tasks" aria-hidden="true"></i> Liste des taches</h4>
+			<a href="#" class="todo-options"><i class="fa fa-cog" aria-hidden="true"></i></a>
+		</div>
+		<div class="todo-project">
+			<div class="todo-project-header">
+				<div class="todo-project-open">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</div>
+				<div class="todo-project-title">
+					<h4>Refonte siteweb.fr</h4>	
+				</div>
+				<div class="clear"></div>
+				<div class="todo-project-info">
+					<div class="tpi-bloc tpi-small">
+						<i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>9</span>
+					</div>
+					<div class="tpi-bloc tpi-small">
+						<i class="fa fa-check" aria-hidden="true"></i><span>6</span>
+					</div>
+					<div class="tpi-bloc tpi-large">
+						<i class="fa fa-clock-o" aria-hidden="true"></i><span>03/10/2016</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="todo-project-content">
+				<div class="todo-project-item">
+					<h4>Architecture html <a href="#"><i class="fa fa-archive" aria-hidden="true"></i></a></h4>
+					<div class="todo-project-bloc">
+						<div class="tpb-line">
+							<p>Analyse architecture html</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="tpb-line">
+							<p>Conception architecture html</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="todo-project-item">
+					<h4>Architecture css <a href="#"><i class="fa fa-archive" aria-hidden="true"></i></a></h4>
+					<div class="todo-project-bloc">
+						<div class="tpb-line">
+							<p>Analyse architecture css</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="tpb-line">
+							<p>Conception architecture css</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="todo-project">
+			<div class="todo-project-header">
+				<div class="todo-project-open">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</div>
+				<div class="todo-project-title">
+					<h4>Rapport d'activité 2016</h4>	
+				</div>
+				<div class="clear"></div>
+				<div class="todo-project-info">
+					<div class="tpi-bloc tpi-small">
+						<i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>9</span>
+					</div>
+					<div class="tpi-bloc tpi-small">
+						<i class="fa fa-check" aria-hidden="true"></i><span>6</span>
+					</div>
+					<div class="tpi-bloc tpi-large">
+						<i class="fa fa-clock-o" aria-hidden="true"></i><span>03/10/2016</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="todo-project-content">
+				<div class="todo-project-item">
+					<h4>Rédaction rapport <a href="#"><i class="fa fa-archive" aria-hidden="true"></i></a></h4>
+					<div class="todo-project-bloc">
+						<div class="tpb-line">
+							<p>Préface</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="tpb-line">
+							<p>Graphiques</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="todo-project-item">
+					<h4>Relecture rapport <a href="#"><i class="fa fa-archive" aria-hidden="true"></i></a></h4>
+					<div class="todo-project-bloc">
+						<div class="tpb-line">
+							<p>Partie 1</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="tpb-line">
+							<p>Partie 2</p>
+							<div class="tpb-line-validate">
+								<a href="#">
+									<i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="infobar toggle">
 		<div class="infos relations">
@@ -323,7 +528,7 @@
 						<a href="#"><img src="ressources/images/user-2.jpg" alt=""></a>
 					</div>
 					<div class="info-user follow">
-						<p><a href="#">Antoine Machin</a></p>
+						<p><a href="#">Antoine azertyuiopqsdfghjkl</a></p>
 						<em><a href="#">@amachin</a></em>
 						<span>Directeur commercial</span>
 					</div>
@@ -338,6 +543,22 @@
 						<i class="fa fa-times-circle" aria-hidden="true"></i>
 						<span>Décliner</span>
 					</a>
+				</div>
+				<div class="user-sheet">
+					<div class="user-sheet-name">
+						<div class="info-img">
+							<a href="#"><img src="ressources/images/user-2.jpg" alt=""></a>
+						</div>
+						<p>
+							<strong>Antoine azertyuiopqsdfghjkl</strong>
+							<a href="#">@amachin</a>
+							<span>Directeur commercial <a href="#">@entreprise2</a></span>
+						</p>
+						<div class="clear"></div>
+					</div>
+					<p class="user-sheet-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, mollitia porro deleniti unde deserunt illum temporibus, vitae voluptatibus dolorem ipsam est. Accusamus alias neque laudantium placeat quod exercitationem fugit, autem debitis eveniet provident deleniti ex excepturi quibusdam soluta dolor sit.</p>
+					<a href="#" class="button button-small button-small-t button-float-r">Voir le profil</a>
+					<div class="clear"></div>
 				</div>
 			</div>
 			<div class="info-bloc follow">
@@ -361,6 +582,22 @@
 						<i class="fa fa-times-circle" aria-hidden="true"></i>
 						<span>Décliner</span>
 					</a>
+				</div>
+				<div class="user-sheet">
+					<div class="user-sheet-name">
+						<div class="info-img">
+							<a href="#"><img src="ressources/images/user-2.jpg" alt=""></a>
+						</div>
+						<p>
+							<strong>Antoine Machin</strong>
+							<a href="#">@amachin</a>
+							<span>Directeur commercial <a href="#">@entreprise2</a></span>
+						</p>
+						<div class="clear"></div>
+					</div>
+					<p class="user-sheet-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, mollitia porro deleniti unde deserunt illum temporibus, vitae voluptatibus dolorem ipsam est. Accusamus alias neque laudantium placeat quod exercitationem fugit, autem debitis eveniet provident deleniti ex excepturi quibusdam soluta dolor sit.</p>
+					<a href="#" class="button button-small button-small-t button-float-r">Voir le profil</a>
+					<div class="clear"></div>
 				</div>
 			</div>
 		</div>

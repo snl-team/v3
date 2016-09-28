@@ -68,6 +68,14 @@ $(document).ready(function(){
 			$('.sub-panel').addClass('remove');
 			$('.l-icon').removeClass('current');
 		});
+
+		$('.title-band h4').each(function(){
+			$(this).append('<div class="close-panel-icon"><i class="fa fa-times" aria-hidden="true"></i></div>')
+			$('.close-panel-icon').click(function(){
+				$('.sub-panel').addClass('remove');
+				$('.l-icon').removeClass('current');
+			});
+		});
 	}
 
 	var desktopIcon = function(){
@@ -82,6 +90,7 @@ $(document).ready(function(){
 				if(desktopSubPanel.hasClass(desktopData+'-panel')){
 					desktopSubPanel.addClass('hide');
 					desktopSubPanel.removeClass(desktopData+'-panel');
+					$('.l-icon').removeClass('current');
 				}else{
 					$('.sub-panel').addClass('hide');
 					$('.sub-panel').removeClass('notifications-panel');
@@ -106,6 +115,7 @@ $(document).ready(function(){
 			$('.sub-panel').removeClass('notifications-panel');
 			$('.sub-panel').removeClass('messages-panel');
 			$('.sub-panel').removeClass('options-panel');
+			$('.l-icon').removeClass('current');
 		});
 	}
 
@@ -141,6 +151,24 @@ $(document).ready(function(){
 		});
 	};
 
+	var desktopSubMenu = function(){
+		var subMenuParent = $('.has-submenu');
+		subMenuParent.each(function(){
+			var submenu = $(this).children('.submenu');
+			$(this).click(function(e){
+				e.preventDefault();
+				if(submenu.hasClass('open')){
+					submenu.removeClass('open').fadeOut(150);
+				}else{
+					submenu.addClass('open').fadeIn(150);
+				}
+			});
+			$('.toggle').click(function(){
+				submenu.removeClass('open').fadeOut(150);
+			});
+		});
+	}
+
 
 	//execution
 	if(windowWidth > 1100){
@@ -155,6 +183,7 @@ $(document).ready(function(){
 		}
 		else if(windowWidth > 1248){	
 			desktopIcon();
+			desktopSubMenu();
 		}		
 	}
 	

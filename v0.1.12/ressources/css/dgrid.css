@@ -10,6 +10,14 @@
 	min-height: 100%;
 }
 
+.d-row.clear{
+	overflow: visible;
+}
+
+.marged-b-25{
+	margin-bottom: 25px;
+}
+
 .d-col{
 	float: left;
 }
@@ -22,7 +30,7 @@
 	.d-col-9{width: 100%;}
 	.d-col-8{width: 100%;}
 	.d-col-7{width: 100%;}
-	.d-col-6{width: 50%;}
+	.d-col-6{width: 100%;}
 	.d-col-5{width: 100%;}
 	.d-col-4{width: 100%;}
 	.d-col-3{width: 100%;}
