@@ -1,0 +1,266 @@
+.todo {
+  z-index: 9000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 55px;
+  background: var(--grey-todo);
+  transition: transform 0.15s ease-out;
+  transform: translateX(100%);
+  overflow-x: hidden;
+}
+
+.todo-header{
+	position: relative;
+	padding: 15px;
+	background: var(--grey-half);
+}
+
+.todo-options{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 15%;
+	line-height: 55px;
+	text-decoration: none;
+	background: rgba(0,0,0,0.05);
+	text-align: center;
+}
+
+.todo-options i{
+	color: var(--contrast-color-reverse);
+}
+
+.todo-header h4{
+	font-size: 1.2em;
+	color: var(--contrast-color-reverse);
+}
+
+.todo-header h4 i{
+	margin-right: 10px;
+	color: var(--contrast-color-reverse);
+}
+
+.todo-project{
+}
+
+.todo-project-header{
+	position: relative;
+	height: auto;
+	padding: 10px;
+	background: var(--grey-half-light);
+	border-bottom: 1px solid var(--grey-half);
+}
+
+.todo-project-open{
+	height: 100%;
+	width: 10%;
+	text-align: center;
+	float: right;
+}
+
+.todo-project-open i{
+	color: var(--contrast-color-reverse);
+}
+
+.todo-project-title{
+	width: 90%;
+	padding-right: 15px;
+	float: left;
+}
+
+.todo-project-title h4{
+	font-size: 1em;
+	font-weight: 700;
+	color: var(--contrast-color-reverse); 
+	padding-bottom: 5px;
+}
+
+.todo-project-info{
+	width: 80%;
+	font-size: 0.8em;
+}
+
+.todo-project-info i,
+.todo-project-info span{
+	color: var(--contrast-color-reverse); 	
+}
+
+.todo-project-info i{
+	margin-right: 7px;
+}
+
+.tpi-bloc{
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 2%;
+}
+
+.tpi-small{
+	width: 15%;
+}
+
+.tpi-large{
+	width: 70%;
+}
+
+.tpi-large i{
+	margin-left: 10px;
+}
+
+.todo-project-content{
+	display: none;
+	width: 98%;
+	margin-left: 2%;
+	padding: 15px 10px 15px 15px;
+	border-left: 2px solid var(--grey);
+	opacity: 0;
+	transition: opacity 0.2s;
+	transition-delay: 0.5s;
+}
+
+.todo-project-content.open{
+	transition-delay: 0.2s;
+	opacity: 1;
+}
+
+.todo-project-item{
+	position: relative;
+	background: #fff;
+	margin-bottom: 15px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.todo-project-item h4{
+	position: relative;
+	background: var(--admin-menu-hover);
+	padding: 10px;
+	color: var(--contrast-color-reverse);
+}
+
+.todo-project-item h4::before{
+	content: '';
+	position: absolute;
+	top: 22px;
+	left: -15px;
+	width: 15px;
+	height: 2px;
+	background: var(--grey);
+}
+
+.todo-project-item h4 a{
+	position: absolute;
+	top: 49%;
+	right: 5px;
+	display: inline-block;
+	text-decoration: none;
+	transform: translateY(-50%);
+}
+
+.todo-project-item h4 a i{
+	color: var(--contrast-color-reverse);	
+}
+
+.todo-project-bloc{
+	font-size: 0.8em;
+}
+
+.tpb-line{
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid var(--grey-light);
+}
+
+.tpb-line p{
+	width: 85%;
+	float: left;
+	margin-bottom: 0;
+}
+
+.tpb-line-validate{
+	float: right;
+	width: 15%;
+	text-align: right;
+}
+
+.tpb-line-validate a{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.tpb-line-validate a .fa-check{
+	color: var(--online);
+}
+
+@media only screen and (min-width:800px){
+	.todo{
+	  left: 280px;
+	  right: 0;
+	  width: auto;
+	}
+
+}
+
+@media only screen and (min-width:1100px){
+	.todo {
+    z-index: 9999;
+    top: 55px;
+    bottom: 0;
+    left: auto;
+    height: auto;
+    width: 210px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    padding-top: 0;
+    transform: translateX(0);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+  }
+
+   .todo-header a{
+   	line-height: 47px;
+   }
+
+   .tpi-small{
+		width: 20%;
+	}
+
+	.tpi-large{
+		width: 60%;
+	}
+	
+	.todo-project-open i{
+		cursor: pointer;
+	}
+
+	.todo-project-content{
+		padding: 5px;
+		padding-left: 10px;
+	}
+
+	.todo-project-item h4::before{
+		top: 13px;
+		width: 10px;
+		left: -10px;
+	}
+
+	.todo-project-item h4{
+		padding: 5px 10px;
+	}
+
+	.tpb-line{
+		padding: 5px 10px;
+	}
+
+	.tpb-line p{
+		width: 80%;
+	}
+
+	.tpb-line-validate{
+		width: 20%;
+	}
+}

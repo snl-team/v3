@@ -1,0 +1,94 @@
+/*
+
+MODULES ESPACES SOCIETE	
+
+employes
+projets
+resumé activité récente
+
+*/
+
+.society-container{
+	padding: 15px;
+}
+
+.society-container .d-col-12{
+	padding: 0;
+}
+
+.society-container .d-col-6{
+	padding-right: 0;
+}
+
+.society-container .d-col-6.p-r-15{
+	padding-right: 15px;
+}
+
+.not-yet{
+	color: var(--grey-medium);
+}
+
+.society-enhance{
+	margin-top: 15px;
+}
+
+.society-enhance-img{
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+}
+
+.society-enhance img{
+	width: 100%;
+}
+
+.society-content-img{
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.society-content-img img{
+	width: 100%;
+}
+
+.t-a-c{
+	text-align: center;
+}
+
+@media only screen and (min-width:800px){
+	.society-admin-menu{
+		bottom: 0;
+		top: 185px;
+		height: auto;
+		padding-top: 0;
+	}
+	.society-admin-menu .admin-menu-title{
+		margin-top: 0;
+		padding: 15px;
+	}
+
+	.society-admin-menu.scrollable{
+		overflow-x: hidden;
+	}
+
+	.society-main-header{
+		padding-left: 35px;
+	}
+
+	.society-container .d-col-6 .society-content{
+		min-height: 390px;
+	}
+}
+
+@media only screen and (min-width:1100px){
+	.society-main{
+		padding-right: 210px;
+		padding-left: 260px;
+	}
+
+	.society-main-header{
+		right: 210px;
+	}
+}
